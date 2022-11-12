@@ -1,0 +1,48 @@
+.services-container {
+    width: 100%;
+    background: #F7FCFE;
+    color: #676767;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.image-container {
+    width: 40%;
+}
+
+.services-img {
+    width: 420px;
+    height: 420px;
+    margin-top: 20px;
+}
+
+.services {
+    width: 60%;
+    padding-left: 100px;
+}
+
+.service {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.services-container h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+
+}
+
+.services-container p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+}

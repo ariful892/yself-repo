@@ -1,0 +1,8 @@
+.navbar-container {
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 1;
+}

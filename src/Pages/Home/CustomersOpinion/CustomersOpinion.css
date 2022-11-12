@@ -1,0 +1,55 @@
+.customers-opinion-container {
+    background: rgba(135, 206, 235, 0.05);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opinion-title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100px;
+    color: #676767;
+    width: 1000px;
+
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    background: #87CEEB;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 7px;
+    margin-top: 33px;
+}
+
+.customers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-top: 30px;
+}
+
+.customer img {
+    width: 420px;
+    height: 300px;
+
+}
+
+.customer p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    color: #676767;
+    margin-top: 10px;
+}
