@@ -2,54 +2,53 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../../../assets/logo.png';
-import linkedin from '../../../assets/linkedin.png';
+import linkedin from '../../../assets/linkedin.svg';
+import fb from '../../../assets/fb-icon.svg';
+import twitter from '../../../assets/twitter.svg';
+import copyright from '../../../assets/copyright.png';
 
 const Footer = () => {
     return (
         <footer className="footer-container">
             <div className='logo-items-container'>
                 <div className='logo-container'>
-                    <Link to={''} className="logo-title "><img className='logo ' src={logo} alt="" /><span>YSELF</span></Link>
-                    <p>@ Yself Inc</p>
+                    <Link to={'/'} className="logo-title "><img className='logo ' src={logo} alt="" /><span>YSELF</span></Link>
+                    <p>@ Yself Io</p>
                 </div>
                 <div className='items-container'>
                     <div className='items'>
                         <span className="items-title">COMPANY</span>
-                        <Link to={''} className="item link-hover">Our Story</Link>
-                        <Link to={''} className="item link-hover">Security</Link>
-                        <Link to={''} className="item link-hover">Careers</Link>
-                        <Link to={''} className="item link-hover">Countries</Link>
-                        <Link to={''} className="item link-hover">Yself Pay</Link>
+                        <Link to={'/story'} className="item link-hover">Our Story</Link>
+                        <Link to={'/security'} className="item link-hover">Security</Link>
+                        <Link to={'/careers'} className="item link-hover">Careers</Link>
+                        <Link to={'/countries'} className="item link-hover">Countries</Link>
+                        <Link to={'/pay'} className="item link-hover">Yself Pay</Link>
                     </div>
                     <div className='items'>
                         <span className="items-title">SUPPORT</span>
-                        <Link to={''} className="item link-hover">FAQ</Link>
-                        <Link to={''} className="item link-hover">Contact Us</Link>
-                        <Link to={''} className="item link-hover">Privacy Policy</Link>
-                        <Link to={''} className="item link-hover">Sending to Kenya</Link>
-                        <Link to={''} className="item link-hover">Sending to Nigeri a</Link>
+                        <Link to={'/faq'} className="item link-hover">FAQ</Link>
+                        <Link to={'/contact'} className="item link-hover">Contact Us</Link>
+                        <Link to={'/supportprivacy'} className="item link-hover">Privacy Policy</Link>
+                        <Link to={'/kenya'} className="item link-hover">Sending to Kenya</Link>
+                        <Link to={'/nigeria'} className="item link-hover">Sending to Nigeria</Link>
                     </div>
                     <div className='items'>
                         <span className="items-title">LEGAL</span>
-                        <Link to={''} className="item link-hover">Customer Complaints</Link>
-                        <Link to={''} className="item link-hover">Terms & Conditions</Link>
-                        <Link to={''} className="item link-hover">Privacy Policy</Link>
+                        <Link to={'/complaints'} className="item link-hover">Customer Complaints</Link>
+                        <Link to={'/conditions'} className="item link-hover">Terms & Conditions</Link>
+                        <Link to={'/legalprivacy'} className="item link-hover">Privacy Policy</Link>
                     </div>
                     <div className='items social-container'>
                         <span className="items-title">SOCIAL NETWORK</span>
                         <div className="social-network">
-                            <Link className='social-logo' to={''}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current mt-1 ml-1"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></Link>
-
-                            <Link className='social-logo'><img className='w-5 ml-2 mt-1' src={linkedin} alt="" /></Link>
-
-                            <Link className='social-logo' to={''}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current mt-1 ml-1"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></Link>
-
-
+                            <Link to={''} className='social-logo' ><img src={fb} alt="" /></Link>
+                            <Link to={''} className='social-logo'><img className='' src={linkedin} alt="" /></Link>
+                            <Link to={''} className='social-logo' ><img src={twitter} alt="" /></Link>
                         </div>
                     </div>
                 </div>
             </div>
-            <p className='copyright'>Copyright
+            <p className='copyright'>Copyright <img className='w-3.5 inline mx-1' src={copyright} alt="" />
                 Yself  {new Date().getFullYear()} All Rights Reserved</p>
         </footer>
     );

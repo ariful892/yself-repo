@@ -7,8 +7,8 @@
     margin-top: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 130px;
+    padding-right: 130px;
 }
 
 .image-container {
@@ -24,6 +24,7 @@
 .services {
     width: 60%;
     padding-left: 100px;
+    padding-right: 65px;
 }
 
 .service {

@@ -14,7 +14,7 @@
 }
 
 .logo-container {
-    margin-right: 150px;
+    margin-right: 200px;
 }
 
 .logo-title {
@@ -40,6 +40,7 @@
 .items-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
     margin-top: 15px;
 }
 
@@ -47,7 +48,7 @@
 .items-title {
     display: block;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
 }
@@ -55,7 +56,7 @@
 .item {
     display: block;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     margin-bottom: 12px;
 }
@@ -72,10 +73,7 @@
 .social-logo {
     width: 35px;
     height: 35px;
-    background: white;
-    color: #87CEEB;
-    border-radius: 50%;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .copyright {
@@ -83,4 +81,5 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    margin-right: 5px;
 }

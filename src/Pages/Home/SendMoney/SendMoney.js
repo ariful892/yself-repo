@@ -2,11 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { faArrowRight, faArrowLeft, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import './SendMoney.css'
-import arrow from '../../../assets/arrow.png';
+import arrow from '../../../assets/arrow.svg';
 import kenya from '../../../assets/kenya.png';
 import usa from '../../../assets/usa.png';
-import arrowLeft from '../../../assets/arrow-left.png';
-import arrowRight from '../../../assets/arrow-right.png';
 
 const SendMoney = () => {
     return (
@@ -26,12 +24,7 @@ const SendMoney = () => {
                     </div>
                 </div>
                 <div className="transactions">
-                    <div>
-                        <img className='transaction-icon' src={arrowLeft} alt="" />
-                    </div>
-                    <div >
-                        <img className='transaction-icon' src={arrowRight} alt="" />
-                    </div>
+                    <img className='transaction-icon' src={arrow} alt="" />
                 </div>
                 <div className='receive-btn'>
                     <div className='btn-text'>
